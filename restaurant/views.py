@@ -1,3 +1,4 @@
+from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
@@ -5,7 +6,7 @@ from django.urls import reverse_lazy
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from .forms import SearchForm
+from .forms import SearchForm, CookCreationForm
 from .models import DishTypes, Dish, Ingredient, Cook
 
 
@@ -43,3 +44,43 @@ class DishListView(LoginRequiredMixin, generic.ListView):
                 name__icontains=form.cleaned_data["search"]
             )
         return queryset
+
+
+class CookCreateView(generic.CreateView):
+    model = Cook
+    form_class = CookCreationForm
+    success_url = reverse_lazy('login')
+
+    def form_valid(self, form):
+        self.object = form.save()
+
+        login(self.request, self.object)
+        print(form.save())
+        return super().form_valid(form)
+
+
+class CookListView(LoginRequiredMixin, generic.ListView):
+    model = Cook
+    context_object_name = "cook_list"
+    template_name = "restaurant/cook_list.html"
+    paginate_by = 20
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super(CookListView, self).get_context_data(**kwargs)
+        search = self.request.GET.get("search", "")
+        context["search_form"] = SearchForm(initial={"search": search})
+        return context
+
+    def get_queryset(self):
+        queryset = Cook.objects.all()
+        form = SearchForm(self.request.GET)
+        if form.is_valid():
+            return queryset.filter(
+                username__icontains=form.cleaned_data["search"]
+            )
+        return queryset
+
+
+class CookDetailView(LoginRequiredMixin, generic.DetailView):
+    model = Cook
+    queryset = Cook.objects.all().prefetch_related("dishes")

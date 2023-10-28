@@ -24,7 +24,7 @@ class Cook(AbstractUser):
         return f"{self.username} ({self.first_name} {self.last_name})"
 
     def get_absolute_url(self):
-        return reverse("restaurant:index", kwargs={"pk": self.pk})
+        return reverse("restaurant:cook-detail", kwargs={"pk": self.pk})
 
 
 class Ingredient(models.Model):
