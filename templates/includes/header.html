@@ -11,7 +11,7 @@
               <a class="nav-link active" aria-current="page" href="{% url 'restaurant:dish-list' %}">Dishes</a>
             </li>
             <li class="">
-              <a class="nav-link" href="#">Cooks</a>
+              <a class="nav-link" href="{% url 'restaurant:cook-list' %}">Cooks</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Ingredients</a>
@@ -25,7 +25,9 @@
                 <li class="nav-item"><a class="nav-link" href="{% url 'restaurant:index' %}">User: {{ user.get_username }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
             {% else %}
-              <li class="nav-item"><a class="nav-link" href="{% url 'login'%}?next={{request.path}}">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'login'%}?next={% url 'restaurant:index' %}">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'restaurant:registration'%}?next={% url 'restaurant:index' %}">Registration</a></li>
+
             {% endif %}
           </ul>
         </div>
