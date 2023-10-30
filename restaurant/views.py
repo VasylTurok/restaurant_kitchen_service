@@ -46,6 +46,10 @@ class DishListView(LoginRequiredMixin, generic.ListView):
         return queryset
 
 
+class DishDetailView(LoginRequiredMixin, generic.DetailView):
+    model = Dish
+
+
 class CookCreateView(generic.CreateView):
     model = Cook
     form_class = CookCreationForm
@@ -55,7 +59,6 @@ class CookCreateView(generic.CreateView):
         self.object = form.save()
 
         login(self.request, self.object)
-        print(form.save())
         return super().form_valid(form)
 
 
@@ -84,3 +87,17 @@ class CookListView(LoginRequiredMixin, generic.ListView):
 class CookDetailView(LoginRequiredMixin, generic.DetailView):
     model = Cook
     queryset = Cook.objects.all().prefetch_related("dishes")
+
+
+class IngredientListView(LoginRequiredMixin, generic.ListView):
+    model = Ingredient
+    context_object_name = "ingredient_list"
+    template_name = "restaurant/ingredient_list.html"
+    paginate_by = 20
+
+
+class DishTypesListView(LoginRequiredMixin, generic.ListView):
+    model = DishTypes
+    context_object_name = "dish_types_list"
+    template_name = "restaurant/dish_types_list.html"
+    paginate_by = 20
