@@ -22,7 +22,7 @@
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0">
             {% if user.is_authenticated %}
-                <li class="nav-item"><a class="nav-link" href="{% url 'restaurant:index' %}">User: {{ user.get_username }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'restaurant:cook-detail' pk=user.id %}">User: {{ user.get_username }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
             {% else %}
               <li class="nav-item"><a class="nav-link" href="{% url 'login'%}?next={% url 'restaurant:index' %}">Login</a></li>

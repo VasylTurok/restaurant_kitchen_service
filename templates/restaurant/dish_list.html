@@ -14,13 +14,12 @@
     {% if dish_list %}
       {% for dish in dish_list %}
         <div class="col-md-4">
-          <a href="{% url 'restaurant:index' %}">
+          <a href="{% url 'restaurant:dish-detail' pk=dish.id %}">
             <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">{{ dish.name }}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">{{ dish.dish_type }}</h6>
                 <p class="card-text">{{ dish.description }}</p>
-                <a href="{% url 'restaurant:dish-detail' pk=dish.id %}" class="card-link">Card link</a>
               </div>
             </div>
           </a>
