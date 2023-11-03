@@ -22,10 +22,6 @@ class SearchForm(forms.Form):
 
 
 class DishForm(forms.ModelForm):
-    cooks = forms.ModelMultipleChoiceField(
-        queryset=get_user_model().objects.all(),
-        widget=forms.SelectMultiple,
-    )
 
     ingredients = forms.ModelMultipleChoiceField(
         queryset=Ingredient.objects.all(),
@@ -34,7 +30,13 @@ class DishForm(forms.ModelForm):
 
     class Meta:
         model = Dish
-        fields = "__all__"
+        fields = (
+            "name",
+            "description",
+            "price",
+            "dish_type",
+            "ingredients"
+        )
 
 
 class CookForm(UserChangeForm):
@@ -50,4 +52,5 @@ class CookForm(UserChangeForm):
             "years_of_experience",
             "first_name",
             "last_name",
+            "dishes",
         )
