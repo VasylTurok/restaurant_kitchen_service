@@ -14,12 +14,11 @@
     {% if cook_list %}
       {% for cook in cook_list %}
         <div class="col-md-4">
-          <a href="{% url 'restaurant:index' %}">
+          <a href="{{ cook.get_absolute_url }}">
             <div class="card mb-3">
-              <div class="card-body">
+              <div class="card-body ">
                 <h5 class="card-title">{{ cook.username }}</h5>
-                <h6 class="card-subtitle mb-2 text-muted"> Years of experience: {{ cook.years_of_experience }}</h6>
-                <a href="{{ cook.get_absolute_url }}" class="card-link">Card link</a>
+                <h6 class="card-subtitle mb-2"> Years of experience: {{ cook.years_of_experience }}</h6>
               </div>
             </div>
           </a>
