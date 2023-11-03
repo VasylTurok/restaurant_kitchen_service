@@ -3,7 +3,10 @@
 
 {% block content %}
   <h1>
-    Dishes List
+    Ingredients List
+    <a href="{% url 'restaurant:ingredient-create' %}" class="btn btn-primary link-to-page">
+      Create
+    </a>
   </h1>
 
 
@@ -11,13 +14,18 @@
     {% if ingredient_list %}
       {% for ingredient in ingredient_list %}
         <div class="col-md-2">
-          <a href="{% url 'restaurant:index' %}">
-            <div class="card mb-3">
+
+          <div class="card mb-3">
+            <a href="{% url 'restaurant:index' %}">
               <div class="card-body">
                 <h5 class="card-title">{{ ingredient.name }}</h5>
               </div>
-            </div>
+            </a>
+          <a href="{% url 'restaurant:ingredient-delete' pk=ingredient.id %}" class="btn btn-danger link-to-page">
+            Delete
           </a>
+          </div>
+
         </div>
       {% endfor %}
     {% else %}

@@ -1,7 +1,7 @@
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse_lazy, reverse
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -87,7 +87,7 @@ class CookListView(LoginRequiredMixin, generic.ListView):
     model = Cook
     context_object_name = "cook_list"
     template_name = "restaurant/cook_list.html"
-    paginate_by = 10
+    paginate_by = 12
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(CookListView, self).get_context_data(**kwargs)
@@ -136,11 +136,34 @@ class IngredientListView(LoginRequiredMixin, generic.ListView):
     paginate_by = 20
 
 
+class IngredientCreateView(LoginRequiredMixin, generic.CreateView):
+    model = Ingredient
+    fields = "__all__"
+    success_url = reverse_lazy("restaurant:ingredient-list")
+
+
+class IngredientDeleteView(LoginRequiredMixin, generic.DeleteView):
+    model = Ingredient
+    success_url = reverse_lazy("restaurant:ingredient-list")
+
+
 class DishTypesListView(LoginRequiredMixin, generic.ListView):
     model = DishTypes
     context_object_name = "dish_types_list"
     template_name = "restaurant/dish_types_list.html"
     paginate_by = 20
+
+
+class DishTypesCreateView(LoginRequiredMixin, generic.CreateView):
+    model = DishTypes
+    fields = "__all__"
+    success_url = reverse_lazy("restaurant:dish-types-list")
+    template_name = "restaurant/dish_types_form.html"
+
+
+class DishTypesDeleteView(LoginRequiredMixin, generic.DeleteView):
+    model = DishTypes
+    success_url = reverse_lazy("restaurant:dish-types-list")
 
 
 @login_required
@@ -152,4 +175,7 @@ def toggle_assign_to_dish(request, pk):
         cooker.dishes.remove(pk)
     else:
         cooker.dishes.add(pk)
-    return HttpResponseRedirect(reverse_lazy("restaurant:dish-list"))
+
+    next_url = request.GET.get('next', '/')
+    print(request.GET)
+    return redirect(next_url)
