@@ -26,6 +26,16 @@
     {% endfor %}
   </ul>
   <hr>
+    {% if dish in user.dishes.all %}
+      <a href="{% url 'restaurant:toggle-dish-assign' pk=dish.id %}?next={{ request.get_full_path }}" class="btn btn-success link-to-page">
+        I can cook this
+      </a>
+    {% else %}
+      <a href="{% url 'restaurant:toggle-dish-assign' pk=dish.id %}?next={{ request.get_full_path }}" class="btn btn-danger link-to-page">
+        I can`t cook this
+      </a>
+    {% endif %}
+  <hr>
   <div>
     Cooks:
     {% for cook in dish.cooks.all %}
@@ -36,5 +46,8 @@
     {% if not dish.cooks.all %}
       <p>Nobody can cook this</p>
     {% endif %}
+
   </div>
+
+
 {% endblock %}

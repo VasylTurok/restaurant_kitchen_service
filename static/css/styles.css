@@ -1,8 +1,20 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: red;
 }
 
-header {
-
+.navbar {
+  font-size: 18px;
 }
+
+.nav-link{
+  color: red;
+}
+
+.pagination p {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 16px;
+  color: #333;
+  }

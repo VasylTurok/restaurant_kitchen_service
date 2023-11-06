@@ -23,13 +23,12 @@
                 <div>
                 <h5 class="card-title">{{ dish.name }}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">{{ dish.dish_type }}</h6>
-
                   {% if dish in user.dishes.all %}
-                    <a href="{% url 'restaurant:toggle-dish-assign' pk=dish.id %}" class="btn btn-success link-to-page">
+                    <a href="{% url 'restaurant:toggle-dish-assign' pk=dish.id %}?next={{ request.get_full_path }}" class="btn btn-success link-to-page">
                       I can cook this
                     </a>
                   {% else %}
-                    <a href="{% url 'restaurant:toggle-dish-assign' pk=dish.id %}" class="btn btn-danger link-to-page">
+                    <a href="{% url 'restaurant:toggle-dish-assign' pk=dish.id %}?next={{ request.get_full_path }}" class="btn btn-danger link-to-page">
                       I can`t cook this
                     </a>
                   {% endif %}

@@ -39,7 +39,7 @@ class DishForm(forms.ModelForm):
         )
 
 
-class CookForm(UserChangeForm):
+class CookForm(forms.ModelForm):
     dishes = forms.ModelMultipleChoiceField(
         queryset=Dish.objects.all(),
         widget=forms.SelectMultiple,

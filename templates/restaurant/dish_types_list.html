@@ -3,24 +3,26 @@
 
 {% block content %}
   <h1>
-    Dishes List
+    Dish types
+    <a href="{% url 'restaurant:dish-types-create' %}" class="btn btn-primary link-to-page">
+      Create
+    </a>
   </h1>
-  <form action="" method="get">
-    {{ search_form|crispy }}
-    <input type="submit" class="btn btn-primary">
-  </form>
+
 
   <div class="row">
     {% if dish_types_list %}
       {% for dish_type in dish_types_list %}
         <div class="col-md-2">
-          <a href="{% url 'restaurant:index' %}">
+
             <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">{{ dish_type.name }}</h5>
               </div>
+              <a href="{% url 'restaurant:dish-types-delete' pk=dish_type.id %}" class="btn btn-danger link-to-page">
+                Delete
+              </a>
             </div>
-          </a>
         </div>
       {% endfor %}
     {% else %}

@@ -1,25 +1,26 @@
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-gradient-dark z-index-3 py-3">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'restaurant:index' %}">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'restaurant:dish-list' %}">Dishes</a>
+            <li class="nav-item{% if request.resolver_match.url_name == 'index' %} active{% endif %}">
+              <a class="nav-link" href="{% url 'restaurant:index' %}">Home</a>
             </li>
-            <li class="">
+            <li class="nav-item{% if request.resolver_match.url_name == 'dish-list' %} active{% endif %}">
+              <a class="nav-link" href="{% url 'restaurant:dish-list' %}">Dishes</a>
+            </li>
+            <li class="nav-item{% if request.resolver_match.url_name == 'cook-list' %} active{% endif %}">
               <a class="nav-link" href="{% url 'restaurant:cook-list' %}">Cooks</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item{% if request.resolver_match.url_name == 'ingredient-list' %} active{% endif %}">
               <a class="nav-link" href="{% url 'restaurant:ingredient-list' %}">Ingredients</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item{% if request.resolver_match.url_name == 'dish-types-list' %} active{% endif %}">
               <a class="nav-link" href="{% url 'restaurant:dish-types-list' %}">DishTypes</a>
             </li>
-          </ul>
+              </ul>
           <ul class="navbar-nav mb-2 mb-lg-0">
             {% if user.is_authenticated %}
                 <li class="nav-item"><a class="nav-link" href="{% url 'restaurant:cook-detail' pk=user.id %}">User: {{ user.get_username }}</a></li>
