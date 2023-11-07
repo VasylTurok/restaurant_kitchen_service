@@ -40,10 +40,6 @@ class DishForm(forms.ModelForm):
 
 
 class CookForm(forms.ModelForm):
-    dishes = forms.ModelMultipleChoiceField(
-        queryset=Dish.objects.all(),
-        widget=forms.SelectMultiple,
-    )
 
     class Meta:
         model = Cook
@@ -52,5 +48,4 @@ class CookForm(forms.ModelForm):
             "years_of_experience",
             "first_name",
             "last_name",
-            "dishes",
         )
