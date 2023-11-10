@@ -15,6 +15,6 @@
         <a href="?{% query_transform request page=page_obj.next_page_number %}" class="page-link">next</a>
       </li>
     {% endif %}
-    <p>{{ page_obj.number }} of {{ paginator.num_pages }}</p>
+    <p class="pagination-info">{{ page_obj.number }} of {{ paginator.num_pages }}</p>
   </ul>
 {% endif %}

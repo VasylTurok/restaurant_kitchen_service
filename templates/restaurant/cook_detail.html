@@ -18,12 +18,12 @@
   <p><strong>Years of experience:</strong> {{ cook.years_of_experience }}</p>
 
 
-    <h4>Dishes</h4>
-    <div class="row">
-    {% for dish in cook.dishes.all %}
+  <h4 class="section-title">Dishes</h4>
 
-      <div class="col-md-3 ">
-        <div class="card" style="max-width: 25rem;">
+  <div class="row">
+    {% for dish in cook.dishes.all %}
+      <div class="col-2">
+        <div class="card custom-card">
           <a href="{% url 'restaurant:dish-detail' pk=dish.id %}">
             <div class="card-header">{{ dish.name }}</div>
           </a>
@@ -31,16 +31,13 @@
             <h5 class="card-title">{{ dish.price}}</h5>
           </div>
           <a href="{% url 'restaurant:toggle-dish-assign' pk=dish.id %}?next={{ request.get_full_path }}"
-             class="btn btn-danger link-to-page"
-             style="max-width: 10rem; margin-left: 7rem;"
-          >
+            class="btn btn-danger link-to-page unsubscribe-btn">
             Unsubscribe
           </a>
         </div>
       </div>
-
     {% empty %}
-      <p>No dishes!</p>
+      <p class="no-dishes-msg">No dishes!</p>
     {% endfor %}
-    </div>
+  </div>
 {% endblock %}

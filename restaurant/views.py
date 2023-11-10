@@ -1,4 +1,4 @@
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
@@ -30,7 +30,7 @@ class DishListView(LoginRequiredMixin, generic.ListView):
     model = Dish
     context_object_name = "dish_list"
     template_name = "restaurant/dish_list.html"
-    paginate_by = 2
+    paginate_by = 6
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(DishListView, self).get_context_data(**kwargs)
@@ -80,9 +80,12 @@ class CookCreateView(generic.CreateView):
 
     def form_valid(self, form):
         self.object = form.save()
-
-        login(self.request, self.object)
-        return super().form_valid(form)
+        cook = authenticate(
+            username=self.object.username,
+            password=form.cleaned_data['password1']  # make sure the form has a password field named 'password1'
+        )
+        login(self.request, cook)
+        return redirect(self.get_success_url())
 
 
 class CookListView(LoginRequiredMixin, generic.ListView):
@@ -135,7 +138,7 @@ class IngredientListView(LoginRequiredMixin, generic.ListView):
     model = Ingredient
     context_object_name = "ingredient_list"
     template_name = "restaurant/ingredient_list.html"
-    paginate_by = 20
+    paginate_by = 18
 
 
 class IngredientCreateView(LoginRequiredMixin, generic.CreateView):
@@ -153,7 +156,7 @@ class DishTypesListView(LoginRequiredMixin, generic.ListView):
     model = DishTypes
     context_object_name = "dish_types_list"
     template_name = "restaurant/dish_types_list.html"
-    paginate_by = 20
+    paginate_by = 18
 
 
 class DishTypesCreateView(LoginRequiredMixin, generic.CreateView):

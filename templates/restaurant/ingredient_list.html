@@ -15,13 +15,13 @@
       {% for ingredient in ingredient_list %}
         <div class="col-md-2">
 
-          <div class="card mb-3">
+          <div class="card mb-3 mini-card align-items-center">
             <a href="{% url 'restaurant:index' %}">
               <div class="card-body">
-                <h5 class="card-title">{{ ingredient.name }}</h5>
+                <h5 class="card-title mini-card-title">{{ ingredient.name }}</h5>
               </div>
             </a>
-          <a href="{% url 'restaurant:ingredient-delete' pk=ingredient.id %}" class="btn btn-danger link-to-page">
+          <a href="{% url 'restaurant:ingredient-delete' pk=ingredient.id %}" class="btn btn-danger delete">
             Delete
           </a>
           </div>

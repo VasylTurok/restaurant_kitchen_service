@@ -15,11 +15,11 @@
       {% for dish_type in dish_types_list %}
         <div class="col-md-2">
 
-            <div class="card mb-3">
+            <div class="card mb-3 align-items-center">
               <div class="card-body">
-                <h5 class="card-title">{{ dish_type.name }}</h5>
+                <h5 class="card-title mini-card-title">{{ dish_type.name }}</h5>
               </div>
-              <a href="{% url 'restaurant:dish-types-delete' pk=dish_type.id %}" class="btn btn-danger link-to-page">
+              <a href="{% url 'restaurant:dish-types-delete' pk=dish_type.id %}" class="btn btn-danger link-to-page delete">
                 Delete
               </a>
             </div>
