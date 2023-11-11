@@ -1,6 +1,5 @@
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy, reverse
 from django.views import generic
@@ -11,7 +10,6 @@ from restaurant.models import DishTypes, Dish, Ingredient, Cook
 
 
 def index(request):
-    """View function for the home page of the site."""
 
     num_cooks = Cook.objects.count()
     num_dishes = Dish.objects.count()
