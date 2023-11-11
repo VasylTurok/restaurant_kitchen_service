@@ -6,8 +6,8 @@ from django.urls import reverse_lazy, reverse
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from .forms import SearchForm, CookCreationForm, DishForm, CookForm
-from .models import DishTypes, Dish, Ingredient, Cook
+from restaurant.forms import SearchForm, CookCreationForm, DishForm, CookForm
+from restaurant.models import DishTypes, Dish, Ingredient, Cook
 
 
 def index(request):
@@ -29,7 +29,6 @@ def index(request):
 class DishListView(LoginRequiredMixin, generic.ListView):
     model = Dish
     context_object_name = "dish_list"
-    template_name = "restaurant/dish_list.html"
     paginate_by = 6
 
     def get_context_data(self, *, object_list=None, **kwargs):
@@ -82,7 +81,7 @@ class CookCreateView(generic.CreateView):
         self.object = form.save()
         cook = authenticate(
             username=self.object.username,
-            password=form.cleaned_data['password1']  # make sure the form has a password field named 'password1'
+            password=form.cleaned_data['password1']
         )
         login(self.request, cook)
         return redirect(self.get_success_url())
@@ -91,7 +90,6 @@ class CookCreateView(generic.CreateView):
 class CookListView(LoginRequiredMixin, generic.ListView):
     model = Cook
     context_object_name = "cook_list"
-    template_name = "restaurant/cook_list.html"
     paginate_by = 12
 
     def get_context_data(self, *, object_list=None, **kwargs):
@@ -131,13 +129,12 @@ class CookDeleteView(LoginRequiredMixin, generic.DeleteView):
 
 class CookDetailView(LoginRequiredMixin, generic.DetailView):
     model = Cook
-    queryset = Cook.objects.all().prefetch_related("dishes")
+    queryset = Cook.objects.prefetch_related("dishes")
 
 
 class IngredientListView(LoginRequiredMixin, generic.ListView):
     model = Ingredient
     context_object_name = "ingredient_list"
-    template_name = "restaurant/ingredient_list.html"
     paginate_by = 18
 
 
