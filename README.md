@@ -16,14 +16,6 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
-> 👉 Start the app
-
-```bash
-$ python manage.py runserver
-```
-
-At this point, the app runs at `http://127.0.0.1:8000/`. 
-
 
 ## Model DB
 ![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/a51ea13e-2b67-454c-9dbc-416092fc1982)
@@ -34,13 +26,22 @@ At this point, the app runs at `http://127.0.0.1:8000/`.
 ```bash
 $ python manage.py makemigrations
 $ python manage.py migrate
+$ python manage.py loaddata data.json
+
 ```
 
-> 👉 Create the Superuser
+>Superuser
+
+- Username: admin
+- Password: name
+
+> 👉 Start the app
 
 ```bash
-$ python manage.py createsuperuser
+$ python manage.py runserver
 ```
+
+At this point, the app runs at `http://127.0.0.1:8000/`. 
 
 
 
