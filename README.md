@@ -1,14 +1,31 @@
 # restaurant-kitchen-service
 
-The project reproduces the work of a culinary service, where you can register as a chef and manage your dishes.
+## Features
+This Django project replicates the functionality of a culinary service, allowing chefs to register and manage their dishes. The key features include:
+
+- User Registration and Authentication: Chefs can register on the platform and log in securely.
+
+- Dish Management: Chefs can add, edit, and delete their dishes. Each dish includes details such as name, description, ingredients.
+
+- Superuser Access: An admin superuser account is available with the credentials provided for managing the overall system.
+
 
 > 👉 Install modules via `VENV`  
 
-```bash
-$ virtualenv env
-$ source env/bin/activate
+On Linux and Mac:
 
+```bash
+$ python3 -m venv venv
+$ source venv/bin/activate
 ```
+
+On Windows:
+
+```bash
+$ python -m venv venv
+$ .\venv\Scripts\activate
+```
+
 
 ## Installing
 
@@ -44,6 +61,10 @@ $ python manage.py runserver
 At this point, the app runs at `http://127.0.0.1:8000/`. 
 
 
+## Site link
+
+
+- 👉 [Restaurant Kitchen Service](http://127.0.0.1:8000/) - `Product page`
 
 ## Site 
 ![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/8912f55e-c1c6-40a8-87fc-cf6f5e456fa2)
