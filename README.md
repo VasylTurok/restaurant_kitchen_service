@@ -35,7 +35,9 @@ $ pip install -r requirements.txt
 
 
 ## Model DB
-![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/a51ea13e-2b67-454c-9dbc-416092fc1982)
+![image](https://github.com/VasylTurok/restaurant_kitchen_service/assets/127683195/774bd52f-41b7-48ee-af3b-2c09f3d832bb)
+
+
 
 
 > 👉 Set Up Database
@@ -67,15 +69,24 @@ At this point, the app runs at `http://127.0.0.1:8000/`.
 - 👉 [Restaurant Kitchen Service](http://127.0.0.1:8000/) - `Product page`
 
 ## Site 
-![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/8912f55e-c1c6-40a8-87fc-cf6f5e456fa2)
-![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/7883f488-185c-40ad-9a1b-a2bfa5bed48e)
-![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/0c7429f0-faba-4fe2-a9cd-d64c28f61942)
-![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/af5bbb4d-821c-437b-b3c7-4323f651d751)
-![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/0bddcae1-a64e-4f4d-8908-13635058803e)
-![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/d2257c16-6da9-4816-a2a8-ebbb41f8868c)
-![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/e87f37e3-6ef8-4e39-99d3-302608741f3e)
-![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/cf89f25c-a895-4511-8fae-d6ee9beee138)
-![image](https://github.com/VasylTurok/restaurant-kitchen-service/assets/127683195/dfea08f3-8dce-4d41-8dbb-6f8be690b2bf)
+![image](https://github.com/VasylTurok/restaurant_kitchen_service/assets/127683195/4c582f27-7e44-4366-9c13-27913d706e13)
+
+![image](https://github.com/VasylTurok/restaurant_kitchen_service/assets/127683195/64e2a928-3ea7-4c02-8a66-b238a41981a0)
+
+![image](https://github.com/VasylTurok/restaurant_kitchen_service/assets/127683195/fd97d7bf-fb26-4a93-964c-b328ab91a89c)
+
+![image](https://github.com/VasylTurok/restaurant_kitchen_service/assets/127683195/277678bf-318a-41ff-957c-2e0dafa43ce1)
+
+![image](https://github.com/VasylTurok/restaurant_kitchen_service/assets/127683195/ff2a6187-5829-445b-aebb-5658296fe3f4)
+
+![image](https://github.com/VasylTurok/restaurant_kitchen_service/assets/127683195/d1f3e373-d812-45f8-b9d9-c13690bd02e4)
+
+![image](https://github.com/VasylTurok/restaurant_kitchen_service/assets/127683195/d51cf991-ebf7-4af4-8aad-3ef0b0cb8966)
+
+![image](https://github.com/VasylTurok/restaurant_kitchen_service/assets/127683195/51866b81-d3cb-43b9-a6bb-6aadf80b0db1)
+
+![image](https://github.com/VasylTurok/restaurant_kitchen_service/assets/127683195/2d3ecd3b-b018-40aa-86ac-ec5429135b67)
+
 
 ## Test
 Use `python manage.py test` to run tests.
