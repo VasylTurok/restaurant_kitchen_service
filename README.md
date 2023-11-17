@@ -66,7 +66,7 @@ At this point, the app runs at `http://127.0.0.1:8000/`.
 ## Site link
 
 
-- 👉 [Restaurant Kitchen Service](http://127.0.0.1:8000/) - `Product page`
+- 👉 [Restaurant Kitchen Service](https://restaurant-kitchen-service-vpi6.onrender.com/) - `Product page`
 
 ## Site 
 ![image](https://github.com/VasylTurok/restaurant_kitchen_service/assets/127683195/4c582f27-7e44-4366-9c13-27913d706e13)
