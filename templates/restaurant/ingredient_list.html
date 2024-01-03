@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+  <h1>
+    Ingredients List
+    <a href="{% url 'restaurant:ingredient-create' %}" class="btn btn-primary link-to-page">
+      Create
+    </a>
+  </h1>
+
+
+  <div class="row">
+    {% if ingredient_list %}
+      {% for ingredient in ingredient_list %}
+        <div class="col-md-2">
+
+          <div class="card mb-3 mini-card align-items-center">
+            <a href="{% url 'restaurant:index' %}">
+              <div class="card-body">
+                <h5 class="card-title mini-card-title">{{ ingredient.name }}</h5>
+              </div>
+            </a>
+          <a href="{% url 'restaurant:ingredient-delete' pk=ingredient.id %}" class="btn btn-danger delete">
+            Delete
+          </a>
+          </div>
+
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>There are no ingredients in the service.</p>
+    {% endif %}
+  </div>
+{% endblock %}

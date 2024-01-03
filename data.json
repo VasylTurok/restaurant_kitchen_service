@@ -1,0 +1,465 @@
+[
+  {
+    "model": "restaurant.cook",
+    "pk": 1,
+    "fields": {
+      "last_login": "2023-11-11 20:00:31.635173",
+      "is_superuser": 1,
+      "password": "pbkdf2_sha256$600000$4kNyb2PgbaVjEgMnmFhuMF$lqlj0URZnURm4/drn8ntAeSTsIj4WvYTRqIVbVj6X5g=",
+      "username": "admin",
+      "first_name": "tregr",
+      "last_name": "gr",
+      "email": "",
+      "is_staff": 1,
+      "is_active": 1,
+      "date_joined": "2023-10-25 21:29:37.940473",
+      "years_of_experience": 10
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 2,
+    "fields": {
+      "last_login": null,
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$ZfABV2ut4Y8uNEQgGXkAxO$s6efMsjbsqK25rN951UYgGUpWsS9feB7StZehanrVGo=",
+      "username": "qwerty",
+      "first_name": "sania",
+      "last_name": "sanich",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-28 21:09:54.627654",
+      "years_of_experience": 2
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 3,
+    "fields": {
+      "last_login": null,
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$27K1PqGtBreU8rvHlTdp8Q$ngiobEMb9/2WfWkddQpnG2aJ8otM4jg62kGT7B76GRI=",
+      "username": "qwerty\u0433",
+      "first_name": "sania",
+      "last_name": "sanich",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-28 21:12:39.755866",
+      "years_of_experience": 1
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 4,
+    "fields": {
+      "last_login": null,
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$s2LsFJ9bEFf0mhT6bvALVA$uaf8iuzU+dWE8C+7pEkrQPhbqoTUCVZaNm2j1Eq0d2o=",
+      "username": "qwerty2",
+      "first_name": "sania",
+      "last_name": "sanich\u041b\u0449\u043c\u0438\u0444\u0456\u0449\u043c\u0444",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-28 21:13:59.523121",
+      "years_of_experience": 7
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 5,
+    "fields": {
+      "last_login": null,
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$3aDjTZdYX8yMndjwh37kVa$bnuD9S2xAxDKwct5w9vyX/KeiNtT7OL0SAV5DayxBaM=",
+      "username": "qwerty3",
+      "first_name": "sania",
+      "last_name": "sanich\u041b\u0449\u043c\u0438\u0444\u0456\u0449\u043c\u0444",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-28 21:16:52.676509",
+      "years_of_experience": 7
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 6,
+    "fields": {
+      "last_login": "2023-10-28 21:18:37.361404",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$a3lOhH7YGdyJB5zBHcPGok$yWcQ/0wwXYWv+u7XRsmzyBQnwZiEQCoHjqhfd3DbsTo=",
+      "username": "\u0439\u0446\u0432\u0430\u043f",
+      "first_name": "sania",
+      "last_name": "sanich\u041b\u0449\u043c\u0438\u0444\u0456\u0449\u043c\u0444",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-28 21:18:37.131404",
+      "years_of_experience": 8
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 7,
+    "fields": {
+      "last_login": "2023-10-28 21:19:37.793203",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$rvL7TmXVdUdtcyahZNfGYD$CNghOt7i9ikFRS6+sZbVAjqkt2c6n20I0f1tIWtlDO0=",
+      "username": "\u0456\u0432\u0456\u0430\u0432\u0456\u0430\u0456\u0432",
+      "first_name": "\u0456\u0430\u0456\u0432\u0430\u0456\u0432",
+      "last_name": "\u0456\u0441\u0447\u043c\u0447",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-28 21:19:37.555197",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 8,
+    "fields": {
+      "last_login": "2023-10-28 21:20:57.648481",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$y47ggAOuTajqaRQefE09EY$jwuY3YuiIW7uE7cLDsizBuRkYRmS7SQMZO1H+5snIQ0=",
+      "username": "\u0446\u0432\u0443\u0430\u0430",
+      "first_name": "\u0446\u0430\u0446\u0443\u0430\u043a\u043f\u043f\u043a\u0435",
+      "last_name": "\u0444\u0434\u0448",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-28 21:20:57.490472",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 9,
+    "fields": {
+      "last_login": "2023-10-28 21:24:26.226892",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$5lFT1cOnpmOgXkWMTdpVvR$WqFQ8cFSgqpHoEQOLsIJfy1xgmxotwKgtcOGmlSY2ok=",
+      "username": "weferg",
+      "first_name": "ergge",
+      "last_name": "greg",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-28 21:24:26.010893",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 10,
+    "fields": {
+      "last_login": "2023-10-28 21:26:49.801298",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$hEFeIWGs5xhlqrJzsBw0ar$s32AVvsMleOfE15OY7UXPycmLGlbv69BeoCOq73hjao=",
+      "username": "dbvgfbfg",
+      "first_name": "fbfgbfgb",
+      "last_name": "fbfgbf",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-28 21:26:49.578298",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 11,
+    "fields": {
+      "last_login": "2023-10-28 21:27:45.000253",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$hAjqBfW9nYPT7YvmDq546P$vTQk+j55dyqEMaAPjEC2eqTPJj4ddHSzkAt9GbQgPqc=",
+      "username": "wferggrg",
+      "first_name": "rthtyhtyh",
+      "last_name": "tyhtyh",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-28 21:27:44.770254",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 12,
+    "fields": {
+      "last_login": "2023-10-30 21:43:57.581861",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$Cvx0r6YYJMRxgORbCwudBj$H6SdchG3D3h9PiJgCU/7QRzyOAoBGIzfxznc3AAUavk=",
+      "username": "fghjkl",
+      "first_name": "ss",
+      "last_name": "sdc",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-30 21:43:57.357611",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 14,
+    "fields": {
+      "last_login": "2023-10-31 16:51:49.310584",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$ZSEn7my9G3pwslr0OMhyY1$xbwiD4CfV9mTrMXYjryaP+0qWIeUqtfIa2vTqgtao5k=",
+      "username": "wrr34r",
+      "first_name": "3r3r43",
+      "last_name": "r43t45",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-31 16:51:49.093311",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 15,
+    "fields": {
+      "last_login": "2023-10-31 21:22:30.116704",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$dhd0Aww8FASupV6uAL6gwm$MYYPMhNQAFqLXTGys1NpDcnwmxA9+fhyPdky6TA5BWU=",
+      "username": "zxcvbn",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-10-31 21:20:58.814484",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 16,
+    "fields": {
+      "last_login": "2023-11-03 22:25:36.975374",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$UAstLeJJdnCRnmV6opXVhn$NM7ARQ7zZOrbTWRmSoRISO4+kreUizyLfd4RyQkYRes=",
+      "username": "\u0439\u0446\u0443\u043a\u0435\u043d\u0433",
+      "first_name": "sania",
+      "last_name": "sanich",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-11-03 22:25:36.752121",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 17,
+    "fields": {
+      "last_login": "2023-11-04 16:22:24.325088",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$nUZgbnViYC0bQvxXvKGc1X$1gpzNSR4LgQAqOIej/FVlifL/SHOAlb+IpTKa5PfdQQ=",
+      "username": "whbgvsss",
+      "first_name": "fg",
+      "last_name": "gh",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-11-04 16:22:24.164854",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 18,
+    "fields": {
+      "last_login": "2023-11-08 10:07:37.383419",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$ZjqBKG0qM3mWxaFqNpvnbd$A44yvarJj9YwC04iXqVEikoVSWKo4TIjrfWwkBaL2uk=",
+      "username": "wfgfdhf",
+      "first_name": "wert",
+      "last_name": "erty",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-11-08 10:07:37.009339",
+      "years_of_experience": 2
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 19,
+    "fields": {
+      "last_login": "2023-11-08 12:13:29.743943",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$w2LBeLJMyFoLz9EmNhUfUy$LGCMDuf/84N1NtWYvoXO9eFqs55MSerzJ0QHyNaN3pQ=",
+      "username": "fgghjk",
+      "first_name": "sdfgh",
+      "last_name": "sdfgh",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-11-08 12:13:29.008404",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.cook",
+    "pk": 20,
+    "fields": {
+      "last_login": "2023-11-10 22:15:03.665574",
+      "is_superuser": 0,
+      "password": "pbkdf2_sha256$600000$2VtYQ32Qu4Iv7SwZJPemrS$YGnuEJy4BbfqMbb7RUUNErorGxIy6qTbku3EMdodsWA=",
+      "username": "qwedfr",
+      "first_name": "wefrgt",
+      "last_name": "hd",
+      "email": "",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2023-11-10 22:15:03.144316",
+      "years_of_experience": 0
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 1,
+    "fields": {
+      "name": "Pizza",
+      "description": "\"Pizza\" is a popular and widely recognized Italian dish that consists of a round, flat piece of dough topped with various ingredients and baked in an oven. It is one of the most beloved and versatile foods worldwide, and there are countless variations and toppings available.",
+      "price": 160,
+      "dish_type": 1
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 2,
+    "fields": {
+      "name": "Shaverma",
+      "description": "this is a popular dish in many countries, which is often associated with the cuisine of the Middle East. It is also known by different names in different regions of the world.",
+      "price": 60,
+      "dish_type": 1
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 3,
+    "fields": {
+      "name": "Omelet",
+      "description": "This is a dish made from eggs that are beaten and then fried in a pan until they curdle and become dense. Omelet can be prepared in different variations with the addition of different ingredients depending on the preferred taste.",
+      "price": 50,
+      "dish_type": 1
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 4,
+    "fields": {
+      "name": "Fried cheese",
+      "description": "Fried cheese, often referred to as \"fried cheese sticks\" or \"cheese sticks,\" is a popular and delicious appetizer or snack. It's made by coating cheese sticks in a breadcrumb or batter mixture and then frying them until they're crispy and golden brown.",
+      "price": 30,
+      "dish_type": 1
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 5,
+    "fields": {
+      "name": "Lasagna",
+      "description": "Lasagna can be made in numerous variations, including vegetarian or vegan options, and it's often served as a hearty and comforting meal. It's a favorite in many parts of the world and is known for its rich, indulgent flavors and layers of deliciousness.",
+      "price": 100,
+      "dish_type": 1
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 6,
+    "fields": {
+      "name": "ravioli",
+      "description": "\"Ravioli\" - \u0446\u0435 \u0432\u0438\u0434 \u0456\u0442\u0430\u043b\u0456\u0439\u0441\u044c\u043a\u043e\u0457 \u043d\u0430\u0447\u0438\u043d\u043a\u0438 \u0434\u043b\u044f \u043f\u0430\u0441\u0442\u0438, \u0449\u043e \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0454 \u0441\u043e\u0431\u043e\u044e \u043d\u0435\u0432\u0435\u043b\u0438\u043a\u0456 \u043a\u0438\u0448\u0435\u043d\u0456 \u0442\u0456\u0441\u0442\u0430, \u043d\u0430\u043f\u043e\u0432\u043d\u0435\u043d\u0456 \u0440\u0456\u0437\u043d\u043e\u043c\u0430\u043d\u0456\u0442\u043d\u0438\u043c\u0438 \u043d\u0430\u0447\u0438\u043d\u043a\u0430\u043c\u0438. \u0417\u0430\u0437\u0432\u0438\u0447\u0430\u0439 \u0446\u0435 \u0442\u0456\u0441\u0442\u043e \u0437 \u0431\u043e\u0440\u043e\u0448\u043d\u0430, \u044f\u0454\u0446\u044c, \u0441\u043e\u043b\u0456 \u0442\u0430 \u0432\u043e\u0434\u0438, \u044f\u043a\u0435 \u043e\u0431'\u0454\u0434\u043d\u0443\u0454\u0442\u044c\u0441\u044f, \u0449\u043e\u0431 \u0443\u0442\u0432\u043e\u0440\u0438\u0442\u0438 \u0442\u0456\u0441\u0442\u043e, \u044f\u043a\u0435 \u043f\u043e\u0442\u0456\u043c \u0440\u043e\u0437\u043a\u0430\u0442\u0443\u044e\u0442\u044c, \u0440\u0456\u0436\u0443\u0442\u044c \u043d\u0430 \u043a\u0440\u0443\u0436\u0435\u0447\u043a\u0438 \u0430\u0431\u043e \u043a\u0432\u0430\u0434\u0440\u0430\u0442\u0438\u043a\u0438, \u0456 \u043d\u0430\u043f\u043e\u0432\u043d\u044e\u044e\u0442\u044c \u043d\u0430\u0447\u0438\u043d\u043a\u043e\u044e.",
+      "price": 79,
+      "dish_type": 1
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 13,
+    "fields": {
+      "name": "Cheburek",
+      "description": "\"\u0427\u0435\u0431\u0443\u0440\u0435\u043a\" - \u0446\u0435 \u0442\u0440\u0430\u0434\u0438\u0446\u0456\u0439\u043d\u0430 \u0441\u0442\u0440\u0430\u0432\u0430, \u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u0430 \u0432 \u043a\u0443\u0445\u043d\u044f\u0445 \u0431\u0430\u0433\u0430\u0442\u044c\u043e\u0445 \u043a\u0440\u0430\u0457\u043d, \u043e\u0441\u043e\u0431\u043b\u0438\u0432\u043e \u0432 \u0421\u0445\u0456\u0434\u043d\u0456\u0439 \u0442\u0430 \u041f\u0456\u0432\u0434\u0435\u043d\u043d\u043e-\u0421\u0445\u0456\u0434\u043d\u0456\u0439 \u0404\u0432\u0440\u043e\u043f\u0456 \u0442\u0430 \u043d\u0430 \u0411\u043b\u0438\u0437\u044c\u043a\u043e\u043c\u0443 \u0421\u0445\u043e\u0434\u0456. \u0426\u0435 \u0432\u0438\u0434 \u0437\u0430\u043a\u0440\u0438\u0442\u043e\u0433\u043e \u0432\u0438\u043f\u0456\u0447\u043a\u0438, \u043f\u0440\u0438\u0433\u043e\u0442\u043e\u0432\u0430\u043d\u043e\u0457 \u0437 \u0442\u0456\u0441\u0442\u0430 \u0456 \u043d\u0430\u0447\u0438\u043d\u043a\u0438. \u041d\u0430\u0439\u043f\u043e\u0448\u0438\u0440\u0435\u043d\u0456\u0448\u0430 \u0432\u0435\u0440\u0441\u0456\u044f \u0447\u0435\u0431\u0443\u0440\u0435\u043a\u0430 \u043c\u0456\u0441\u0442\u0438\u0442\u044c \u043d\u0430\u0447\u0438\u043d\u043a\u0443 \u0456\u0437 \u043c'\u044f\u0441\u0430 (\u0437\u0430\u0437\u0432\u0438\u0447\u0430\u0439 \u044f\u043b\u043e\u0432\u0438\u0447\u0438\u043d\u0438 \u0447\u0438 \u0431\u0430\u0440\u0430\u043d\u0438\u043d\u0438), \u0446\u0438\u0431\u0443\u043b\u0456 \u0442\u0430 \u0440\u0456\u0437\u043d\u0438\u0445 \u0441\u043f\u0435\u0446\u0456\u0439.\r\n\r\n\u041e\u0441\u043d\u043e\u0432\u043d\u043e\u044e \u043e\u0441\u043e\u0431\u043b\u0438\u0432\u0456\u0441\u0442\u044e \u0447\u0435\u0431\u0443\u0440\u0435\u043a\u0430 \u0454 \u0439\u043e\u0433\u043e \u0442\u0456\u0441\u0442\u043e, \u044f\u043a\u0435 \u0433\u043e\u0442\u0443\u0454\u0442\u044c\u0441\u044f \u0442\u0430\u043a, \u0449\u043e\u0431 \u0431\u0443\u043b\u043e \u0442\u043e\u043d\u043a\u0438\u043c \u0442\u0430 \u0445\u0440\u0443\u0441\u0442\u043a\u0438\u043c \u043f\u0456\u0441\u043b\u044f \u0432\u0438\u043f\u0456\u043a\u0430\u043d\u043d\u044f. \u0419\u043e\u0433\u043e \u0437\u0430\u0437\u0432\u0438\u0447\u0430\u0439 \u0444\u043e\u0440\u043c\u0443\u044e\u0442\u044c \u0443 \u0444\u043e\u0440\u043c\u0456 \u043d\u0430\u043f\u0456\u0432\u043c\u0456\u0441\u044f\u0446\u044f \u0447\u0438 \u043a\u0440\u0443\u0433\u0430 \u0442\u0430 \u043e\u0431\u0436\u0430\u0440\u044e\u044e\u0442\u044c \u0443 \u043c\u0430\u0441\u043b\u0456 \u0447\u0438 \u043f\u0435\u0447\u0443\u0442\u044c \u0432 \u043f\u0435\u0447\u0456.",
+      "price": 777,
+      "dish_type": 1
+    }
+  },
+  {
+    "model": "restaurant.ingredient",
+    "pk": 1,
+    "fields": {
+      "name": "tomato"
+    }
+  },
+  {
+    "model": "restaurant.ingredient",
+    "pk": 2,
+    "fields": {
+      "name": "sausage"
+    }
+  },
+  {
+    "model": "restaurant.ingredient",
+    "pk": 3,
+    "fields": {
+      "name": "chese"
+    }
+  },
+  {
+    "model": "restaurant.ingredient",
+    "pk": 4,
+    "fields": {
+      "name": "Garlic"
+    }
+  },
+  {
+    "model": "restaurant.ingredient",
+    "pk": 5,
+    "fields": {
+      "name": "cabbage"
+    }
+  },
+  {
+    "model": "restaurant.dishtypes",
+    "pk": 1,
+    "fields": {
+      "name": "tomato"
+    }
+  },
+  {
+    "model": "restaurant.dishtypes",
+    "pk": 2,
+    "fields": {
+      "name": "sausage"
+    }
+  },
+  {
+    "model": "restaurant.dishtypes",
+    "pk": 3,
+    "fields": {
+      "name": "chese"
+    }
+  },
+  {
+    "model": "restaurant.dishtypes",
+    "pk": 4,
+    "fields": {
+      "name": "Garlic"
+    }
+  },
+  {
+    "model": "restaurant.dishtypes",
+    "pk": 5,
+    "fields": {
+      "name": "cabbage"
+    }
+  }
+]

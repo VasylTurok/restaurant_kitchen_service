@@ -1,0 +1,154 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+.active {
+    
+  color: blueviolet !important;
+
+}
+
+.search-form{
+  max-width: 20rem;
+  margin-left: 2rem;
+
+}
+
+.cook-card{
+  background: linear-gradient(to right,#9860c3,#505c87);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.row{
+  margin: 1rem;
+}
+
+.actual{
+  color: burlywood;
+}
+
+.page-header{
+
+  min-height: 500px;
+}
+
+
+.navbar {
+  font-size: 18px;
+  background-color: red;
+}
+
+.nav-link{
+  color: red;
+}
+
+.pagination p {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 16px;
+  color: #333;
+  }
+
+.col-md-3{
+margin: 10px;
+}
+
+.delete{
+  letter-spacing: -.025rem;
+  text-transform: uppercase;
+  box-shadow: 0 4px 7px -1px rgba(0,0,0,.11), 0 2px 4px -1px rgba(0,0,0,.07);
+  background-size: 150%;
+  background-position-x: 25%;
+  background-color: #ea0606;
+  width: 6rem;
+  text-align: center;
+}
+.card {
+  border: 1px solid #ddd; /* Рамка картки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь картки */
+  transition: transform 0.3s ease-in-out; /* Анімація при наведенні */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  color: #333;
+}
+
+.mini-card-title{
+    text-align: center;
+
+}
+
+.pagination-info {
+  font-size: 14px;
+  color: #981717;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.custom-card {
+  max-width: 15rem;
+  margin-bottom: 20px;
+
+}
+
+.card-header {
+  background-color: #31c5d2;
+  color: #fff;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  color: #333;
+}
+
+.unsubscribe-btn {
+  max-width: 10rem;
+  margin-left: 1rem;
+}
+
+.no-dishes-msg {
+  margin-top: 20px;
+  font-style: italic;
+  color: #777;
+}
+
+
+.create-form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.create-form input,
+.create-form select,
+.create-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+
+.create-form input[type="submit"]:hover {
+  background-color: #b3001b;
+}
+

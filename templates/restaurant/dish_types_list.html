@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+  <h1>
+    Dish types
+    <a href="{% url 'restaurant:dish-types-create' %}" class="btn btn-primary link-to-page">
+      Create
+    </a>
+  </h1>
+
+
+  <div class="row">
+    {% if dish_types_list %}
+      {% for dish_type in dish_types_list %}
+        <div class="col-md-2">
+
+            <div class="card mb-3 align-items-center">
+              <div class="card-body">
+                <h5 class="card-title mini-card-title">{{ dish_type.name }}</h5>
+              </div>
+              <a href="{% url 'restaurant:dish-types-delete' pk=dish_type.id %}" class="btn btn-danger link-to-page delete">
+                Delete
+              </a>
+            </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>There are no dish types in the service.</p>
+    {% endif %}
+  </div>
+{% endblock %}

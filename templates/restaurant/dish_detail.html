@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>
+    {{ dish.name }}
+    <a href="{% url 'restaurant:dish-update' pk=dish.id %}" class="btn btn-secondary link-to-page">
+      Update
+    </a>
+    <a href="{% url 'restaurant:dish-delete' pk=dish.id %}" class="btn btn-danger link-to-page">
+      Delete
+    </a>
+  </h1>
+
+  <h2>
+    Price: {{ dish.price }}
+  </h2>
+  <h3>
+    Type: {{ dish.dish_type }}
+  </h3>
+  <p>Description: {{ dish.description }}</p>
+
+  <ul>
+    Ingredients
+    {% for ingredient in dish.ingredients.all %}
+      <li>{{ ingredient.name }}</li>
+    {% endfor %}
+  </ul>
+  <hr>
+    {% if dish in user.dishes.all %}
+      <a href="{% url 'restaurant:toggle-dish-assign' pk=dish.id %}?next={{ request.get_full_path }}" class="btn btn-success link-to-page">
+        I can cook this
+      </a>
+    {% else %}
+      <a href="{% url 'restaurant:toggle-dish-assign' pk=dish.id %}?next={{ request.get_full_path }}" class="btn btn-danger link-to-page">
+        I can`t cook this
+      </a>
+    {% endif %}
+  <hr>
+  <div>
+    Cooks:
+    {% for cook in dish.cooks.all %}
+      <a href="{% url 'restaurant:cook-detail' pk=cook.id %}" class="btn btn-secondary link-to-page">
+        {{ cook.username }}
+      </a>
+    {% endfor %}
+    {% if not dish.cooks.all %}
+      <p>Nobody can cook this</p>
+    {% endif %}
+
+  </div>
+
+
+{% endblock %}
